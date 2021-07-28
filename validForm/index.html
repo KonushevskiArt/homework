@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrapper">
+    <form name="siteDescription" class="form" action="https://fe.it-academy.by/TestForm.php">
+      <p>Для внесения вашего сайта в каталог, заполните форму:</p>
+      <p>
+        <label for="developers">Разработчики:</label>
+        <input name="developers" type="text">
+        <span class="errorMessage"></span>
+      </p>
+      <p>
+        <label for="siteName">Название сайта:</label>
+        <input name="siteName" type="text">
+        <span class="errorMessage"></span>
+      </p>
+      <p>
+        <label for="url">URL сайта:</label>
+        <input name="url" type="text">
+        <span class="errorMessage"></span>
+      </p>
+      <p>
+        <label for="siteLaunchDate">Дата запуска сайта:</label>
+        <input name="siteLaunchDate" type="date">
+        <span class="errorMessage"></span>
+      </p>
+      <p>
+        <label for="visitorsPerMonth">Посетителей в сутки:</label>
+        <input name="visitorsPerMonth" type="number">
+        <span class="errorMessage"></span>
+      </p>
+      <p>
+        <label for="email">E-mail для связи:</label>
+        <input name="email" type="email">
+        <span class="errorMessage"></span>
+      </p>
+      <p>
+        <label for="catalogHeading">Рубрика каталога:</label>
+        <select name="catalogHeading">
+          <option value="0">выбрать</option>
+          <option value="1">бытовая техника</option>
+          <option value="2">одежда</option>
+          <option value="3">стройматериалы</option>
+        </select>
+        <span class="errorMessage"></span>
+      </p>
+      <p>
+        <label for="hosting">Размещение:</label>
+        <span class="hostingWrapperRadio">
+          <input name="hosting" type="radio" id="free" value="free">
+          <label for="free" >бестлатное</label>
+          <input name="hosting" type="radio" id="paid" value="paid">
+          <label for="paid">платное</label>
+          <input name="hosting" type="radio" id="VIP" value="VIP">
+          <label for="VIP">VIP</label>
+        </span>
+        <span class="errorMessage"></span>
+      </p>
+      <p>
+        <label for="isReviews">Разрешить отзывы:</label>
+        <input name="isReviews" type="checkbox">
+        <span class="errorMessage"></span>
+      </p>
+      <p class="wrapperTextarea">
+        <label for="description">Описание сайта:</label>
+        <textarea name="description"></textarea>
+        <span class="errorMessage"></span>
+      </p>
+     <p>
+      <button>Опубликовать</button>
+     </p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
